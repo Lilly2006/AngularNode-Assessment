@@ -1,0 +1,43 @@
+<table border="1">
+    <thead>
+        <tr>
+            <td>
+               Id
+            </td>
+            <td>
+                Name
+            </td>
+            <td>
+                Description
+            </td>
+            <td>
+                Published 
+            </td>
+            <td>
+                Fees
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let course of courses">
+            <td>
+                {{course.id}}
+            </td>
+            <td>
+                {{course.title}}
+            </td>
+            <td>
+                {{course.description}}
+            </td>
+            <td>
+                {{course.published}}
+            </td>
+            <td>
+                {{course.fees}}
+            </td>
+           
+        </tr>
+
+    </tbody>
+</table>
+<app-new-course></app-new-course>
